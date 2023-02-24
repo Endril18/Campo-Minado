@@ -1,2 +1,2 @@
 # Campo-Minado
-Jogo simples de Campo Minado com o pygame
+Jogo simples de Campo Minado com o pygame (Ainda em construção)
