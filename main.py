@@ -45,15 +45,17 @@ import funcoes
 
 # Abre as células adjacentes
 
-# ----------------------------------------------------
-
 
 # No Terminal
 
 # Itens da Matriz
+espacos = 36 
 campoVazio = ["X"]
 campoBomba = ["💣"]
 quantidadeBombas = 10
 
+# Criacção da Matriz
+matriz = funcoes.criarMatriz(campoVazio, campoBomba, quantidadeBombas, espacos)
+
 for i in range(6):
-  print(funcoes.criarMatriz(campoVazio, campoBomba, quantidadeBombas)[i])
+  print(matriz[i])

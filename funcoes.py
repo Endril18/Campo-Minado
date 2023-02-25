@@ -1,19 +1,17 @@
 import random
 
 # Criação da Matriz
-def criarMatriz(vazio, bomba, quantBomba):
-  novaLista = []
-  campoBomba = 0
-  for i in range(36):
-    while(quantBomba > campoBomba):
-      novaLista.append(bomba)
-      campoBomba += 1
-    
-    novaLista.append(vazio)
-
+def criarMatriz(vazio, bomba, quantBomba, espacos):
+  
+  item = (bomba * quantBomba)
+  while(len(item) < 36):
+    item += vazio
+  
+  novaLista = list (item)
+  
   #embaralhar
-  random.shuffle(novaLista)
-
+  novaLista = random.sample(novaLista, len(novaLista)) 
+  
   #Formando uma Matriz
   matriz = []
   pEsq = 0
