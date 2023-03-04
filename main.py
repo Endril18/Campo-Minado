@@ -2,7 +2,6 @@
 import random
 import time
 import funcoes
-import teste
 
 # Itens da Matriz
 tamanhoCampo = 6 
