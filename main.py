@@ -2,15 +2,19 @@
 import random
 import time
 import funcoes
+import teste
 
 # Itens da Matriz
-espacos = 36 
-campoVazio = ["X"]
-campoBomba = ["💣"]
+tamanhoCampo = 6 
+campoVazio = 0
+campoBomba = "💣"
 quantidadeBombas = 10
 
 # Criacção da Matriz
-matriz = funcoes.criarMatriz(campoVazio, campoBomba, quantidadeBombas, espacos)
+matriz = funcoes.criarMatriz(campoBomba, quantidadeBombas, tamanhoCampo)
 
-for i in range(6):
-  print(matriz[i])
+# Contagem das bombas adjacentes
+cont = funcoes.minasAdjacentes(matriz, tamanhoCampo)
+
+for j in range(6):
+  print(cont[j])
